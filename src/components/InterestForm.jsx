@@ -97,7 +97,9 @@ export default function InterestForm() {
 
           <div className="field-group-row">
             <div className="field-group-column">
-              <label htmlFor="firstName">Estimated Air Fryer Cost in US dollars</label>
+              <label htmlFor="firstName">
+                Estimated Air Fryer Cost in US dollars
+              </label>
               <input
                 name="guess"
                 value={formData.guess}
