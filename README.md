@@ -50,7 +50,7 @@ The form layout and styling aim to closely mimic the bold, expressive design lan
 
 ![Mobile layout screenshot](./screenshots/mobile.png)
 
-Typography, border styling, and color choices were customized to reflect Spidr’s aesthetic: clean, high-contrast, and slightly unconventional. The font was sourced externally to match the look and feel of Spidr Design’s site.
+Typography, border styling, and color choices were customized to reflect Spidr’s aesthetic: clean, high-contrast, and slightly unconventional. The font, Raleway (imported via Google Fonts) was chosen to match the look and feel of Spidr Design’s site.
 
 ## Live Demo
 
