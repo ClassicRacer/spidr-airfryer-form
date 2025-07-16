@@ -1,12 +1,57 @@
-# React + Vite
+# Spidr Air Fryer Interest Form
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React app that contains a single-page form in the style of [Spidr Design's website](https://spidr.design/), built as a fictional interest form for their new air fryer.
 
-Currently, two official plugins are available:
+## Form Fields
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The form contains the following fields:
 
-## Expanding the ESLint configuration
+- First name
+- Last name
+- Phone number (format validated)
+- Email address (format validated)
+- Estimated Air Fryer's cost in US dollars (numbers only)
+- Spidr PIN (16 digits, auto-formatted as `####-####-####-####`)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The **Submit** button prints the form data to the browser console and resets the form.
+
+## Tech Stack
+
+- **React** with `useState`
+  - Regex-based input formatting (`onChange`)
+  - Local image asset used as background
+- **CSS** for layout, responsiveness, and Spidr-inspired styling
+- **HTML** for form structure
+- **Vite** for development
+- **GitHub Pages** for deployment
+
+## Design & Style
+
+The form layout and styling aim to closely mimic the bold, expressive design language of Spidr Design.
+
+### Desktop
+
+- The background image fills the **left half** of the screen.
+- A **translucent blue overlay** containing the form floats on the **right half**.
+
+![Desktop layout screenshot](./screenshots/desktop.png)
+
+### Tablet
+
+- The background image spans the **entire screen width**.
+- The form overlay is centered **on top of the image**.
+
+![Tablet layout screenshot](./screenshots/tablet.png)
+
+### Mobile
+
+- The background image appears on the **bottom half** of the screen.
+- The form is placed **above** the image.
+
+![Mobile layout screenshot](./screenshots/mobile.png)
+
+Typography, border styling, and color choices were customized to reflect Spidr’s aesthetic: clean, high-contrast, and slightly unconventional. The font was sourced externally to match the look and feel of Spidr Design’s site.
+
+## Live Demo
+
+[View the form on GitHub Pages](https://classicracer.github.io/spidr-airfryer-form/)
